@@ -1,6 +1,6 @@
 #!/bin/bash
 #Use this for docker build
-VERSION=v0.0.1
+VERSION=v0.0.4
 APP_NAME=weather-advisor
 #Use this for helm
 RELEASE_NAME=advisor

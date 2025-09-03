@@ -8,7 +8,7 @@ image:
   repository: docker.io/sidharthpai/weather-advisor
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v0.0.1"
+  tag: "v0.0.4"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -84,6 +84,7 @@ affinity: {}
 #Configmap
 configmap:
   data:
-    #service ip of weather app(main app)
-    WEATHER_SERVICE_HOST: "10.96.143.133"
+    #DNS of weather app(main app)
+    WEATHER_SERVICE_HOST: "weather-python-api.default.svc.cluster.local"
+    #Port of weather app(main app)
     WEATHER_SERVICE_PORT: "8080"
